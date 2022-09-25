@@ -6,4 +6,7 @@
 # - 7 -> да
 # - 1 -> нет
 
-numday = input('')
+numday = int(input('Введите день недели: '))
+if 0 < numday < 6: print('Будни. Работаем')
+elif 5 < numday < 8: print('Выходной. Спим')
+else: print('Нет такого дня недели')
